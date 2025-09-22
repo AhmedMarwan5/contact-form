@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-image: url("/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    background-color: white;
+    width: 32rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.11);
+    /* box-shadow: 0 4px 30px rgba(255, 255, 255, 0.4); */
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.form {
+    width: 100%;
+}
+
+input, textarea {
+    min-height: fit-content;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.11);
+    /* box-shadow: 0 4px 30px rgba(255, 255, 255, 0.4); */
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    resize: vertical;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-family: "inter";
+    display: block;
+    width: 100%;
+    outline: none;
+    border-radius: 0.25rem;
+    color: white;
+}
+
+textarea {
+    padding-bottom: 4rem;
+}
+
+input[type="submit"] {
+    font-weight: 800;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #b3b3b3;
+}
